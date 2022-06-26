@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
+}
+
+:root{
+	--dark-yellow:#f09526;
+	--light-yellow:rgb(255, 241, 221);
+	--dark-green:#1BAC7F;
+	--light-green:#E4F6F1;
+	--black: #31312F;
+	
+}
