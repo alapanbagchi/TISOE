@@ -1,3 +1,4 @@
+
 <div class="wrapper">
 	<div class="image">
 		<img
@@ -38,12 +39,16 @@
 		border-radius: 7px;
 		display: flex;
 		flex-direction: column;
-        border: 2px solid var(--light-green);
 		cursor: pointer;
+		border: 1px solid #99c7a8;
+		color: var(--dark-green);
+
 	}
 	.wrapper:hover {
-        box-shadow: 2px 2px 10px var(--light-green);
+		box-shadow:  0px 0px 10px 0px #c4def5;
 		transition: all 0.3s ease-in-out;
+		background-color: var(--dark-green);
+		color: white;
 	}
 	.image {
 		width: 100%;
@@ -65,11 +70,13 @@
 		justify-content: space-between;
 		align-items: center;
 		font-weight: 600;
-		color: var(--black);
 	}
 	.price {
-		color: var(--dark-green);
+		color: #2e6101;
 		font-size: 1rem;
+	}
+	.wrapper:hover .price{
+		color: #75da1e;
 	}
 	.description {
 		opacity: 0.6;
@@ -95,7 +102,6 @@
 		gap: 1em;
 		font-size: 0.9rem;
 		font-weight: 600;
-		color: var(--black);
 	}
 	.avatar img {
 		width: 100%;
@@ -104,6 +110,5 @@
 	.footer > p {
 		font-size: 0.9rem;
 		font-weight: 600;
-		color: var(--dark-green);
 	}
 </style>

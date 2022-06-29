@@ -7,10 +7,10 @@
 }
 
 :root{
-	--dark-yellow:#f09526;
+	--dark-yellow:#fb7d0f;
 	--light-yellow:rgb(255, 241, 221);
-	--dark-green:#1BAC7F;
-	--light-green:#E4F6F1;
+	--dark-green:#091010;
+	--light-green:#DFDFF7;
 	--black: #31312F;
-	
+	--padding: 0 5rem;
 }

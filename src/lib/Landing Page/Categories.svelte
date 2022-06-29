@@ -1,20 +1,19 @@
 <script>
 	import CategoryBlock from './CategoryBlock.svelte';
-    import categories from "../../data/categories";
-
+	import categories from '../../data/categories';
 </script>
 
 <div class="wrapper">
 	<div class="section_description">
-		<p class="about">Categories</p>
-		<p class="heading">
-			A <span class="underline">Robust</span> Selection of <span class="underline">Courses</span>
-			<br />to choose from
-		</p>
+		<div class="block">
+			<p class="about">Categories</p>
+			<p class="heading">
+				A Robust Selection of Courses to choose from
+			</p>
+		</div>
 		<p class="description">
-			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto itaque, aperiam qui sint ipsam
-			quibusdam doloremque tenetur aliquid saepe deleniti laborum quam, veritatis laudantium omnis
-			optio debitis, aliquam quas impedit!
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quisquam ducimus commodi dolores quo labore aperiam nihil fugit aliquid quia temporibus, cupiditate harum architecto esse aut velit adipisci dolor cum.
+			Temporibus ea ratione quibusdam facere quia! Vero alias quaerat quis velit! Cum labore quaerat non animi voluptates reiciendis, culpa, magni aliquid modi atque eaque odit at, dolorum quibusdam incidunt ipsa.
 		</p>
 	</div>
 	<div class="categories">
@@ -29,45 +28,52 @@
 	.wrapper {
 		width: 100%;
 		height: fit-content;
-		padding: 8em 8em 0 8em;
+		padding: var(--padding);
+		margin: 5rem 0;
 		margin-bottom: 5em;
 	}
 	.section_description {
 		display: flex;
 		gap: 0.5rem;
-		align-items: center;
+	}
+	.block{
+		display: flex;
 		flex-direction: column;
+		gap: 1rem;
 	}
 	.heading {
 		width: fit-content;
-		font-size: 2.5rem;
-		font-weight: 600;
+		font-size: 2rem;
+		font-weight: 500;
 		color: #3f2845;
-		text-align: center;
 		position: relative;
 	}
 	.about {
-		font-size: 1rem;
-		font-weight: 600;
-		color: var(--dark-green);
+		font-size: 0.8rem;
+		font-weight: 500;
+		background-color: var(--dark-green);
+		width: fit-content;
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 50px;
 	}
 	.description {
-		text-align: center;
 		opacity: 0.5;
 		font-size: 1.1rem;
 		font-weight: 500;
 		line-height: 30px;
 		font-family: 'Inter';
-		margin-top: 0.5rem;
+		margin-top: 3rem;
 		width: 80%;
 	}
 	.categories {
 		display: grid;
-		grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
+		grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 		justify-content: space-between;
 		margin-top: 2rem;
 		gap: 2em;
 	}
+
 	.underline {
 		width: fit-content;
 		position: relative;

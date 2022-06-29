@@ -1,19 +1,26 @@
 <script>
 	import CourseBlock from './CourseBlock.svelte';
+	$: filter = 'all'
 </script>
 
 <div class="wrapper">
 	<div class="section_description">
-		<p class="about">Courses</p>
-		<p class="heading">
-			<span class="underline">Carefully</span> Crafted <span class="underline">Courses</span>
-			<br />For Your Needs
-		</p>
+		<div class="block">
+			<p class="about">Categories</p>
+			<p class="heading">
+				A Robust Selection of Courses to choose from
+			</p>
+		</div>
 		<p class="description">
-			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto itaque, aperiam qui sint ipsam
-			quibusdam doloremque tenetur aliquid saepe deleniti laborum quam, veritatis laudantium omnis
-			optio debitis, aliquam quas impedit!
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quisquam ducimus commodi dolores quo labore aperiam nihil fugit aliquid quia temporibus, cupiditate harum architecto esse aut velit adipisci dolor cum.
+			Temporibus ea ratione quibusdam facere quia! Vero alias quaerat quis velit! Cum labore quaerat non animi voluptates reiciendis, culpa, magni aliquid modi atque eaque odit at, dolorum quibusdam incidunt ipsa.
 		</p>
+	</div>
+	<div class="filters">
+		<button on:click={()=>{filter = 'all'}} class="{filter == 'all' ? 'active' : ''}">All</button>
+		<button on:click={()=>{filter = 'art'}} class="{filter == 'art' ? 'active' : ''}">Art</button>
+		<button on:click={()=>{filter = 'language'}} class="{filter == 'language' ? 'active' : ''}">Language</button>
+		<button on:click={()=>{filter = 'coding'}} class="{filter == 'coding' ? 'active' : ''}">Coding</button>
 	</div>
 	<div class="courses">
 		<CourseBlock />
@@ -31,20 +38,23 @@
 	.wrapper {
 		width: 100%;
 		height: fit-content;
-		padding: 0 8em 0 8em;
+		padding: 5rem; 
+		background-color: rgba(170, 192, 177, 0.384);
 	}
 	.section_description {
 		display: flex;
 		gap: 0.5rem;
-		align-items: center;
+	}
+	.block{
+		display: flex;
 		flex-direction: column;
+		gap: 1rem;
 	}
 	.heading {
 		width: fit-content;
 		font-size: 2.5rem;
 		font-weight: 600;
-		color: #3f2845;
-		text-align: center;
+		color: var(--dark-green);
 		position: relative;
 	}
 	.about {
@@ -53,14 +63,22 @@
 		color: var(--dark-green);
 	}
 	.description {
-		text-align: center;
 		opacity: 0.5;
 		font-size: 1.1rem;
 		font-weight: 500;
 		line-height: 30px;
 		font-family: 'Inter';
-		margin-top: 0.5rem;
+		margin-top: 3rem;
 		width: 80%;
+	}
+	.about {
+		font-size: 0.8rem;
+		font-weight: 500;
+		background-color: var(--dark-green);
+		width: fit-content;
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 50px;
 	}
 	.courses {
 		display: grid;
@@ -69,20 +87,25 @@
 		grid-gap: 3em;
 		margin-top: 2rem;
 	}
-
-	.underline {
-		width: fit-content;
-		position: relative;
-	}
-	.underline:before {
-		display: block;
-		content: '';
-		position: absolute;
+	
+	.filters{
+		display: flex;
+		gap: 1rem;
 		width: 100%;
-		left: 1px;
-		bottom: 5px;
-		height: 12px;
-		z-index: -1;
-		background-color: #46ecb8;
+		margin-top: 2rem;
+	}
+	.filters button{
+		background-color: transparent;
+		border: 1px solid var(--dark-green);
+		color: black;
+		padding: 0.5rem 1rem;
+		border-radius: 50px;
+		font-size: 0.8rem;
+		font-weight: 500;
+		cursor: pointer;
+	}
+	.active{
+		color: white !important;
+		background-color: var(--dark-green) !important;
 	}
 </style>
