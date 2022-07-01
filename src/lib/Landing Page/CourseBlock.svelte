@@ -1,55 +1,58 @@
+<script lang="ts">
+	export let title: string;
+	export let price: number;
+	export let description: string;
+	export let banner: string;
+	export let author: string;
+	export let avatar: string;
+</script>
 
-<div class="wrapper">
-	<div class="image">
-		<img
-			src="https://images.unsplash.com/photo-1550450339-e7a4787a2074?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=952&q=80 952w"
-			alt=""
-		/>
-	</div>
-	<div class="content">
-		<div class="header">
-			<p class="topic">Landscapes</p>
-			<p class="price">$30.00</p>
+	<div class="wrapper">
+		<div class="image">
+			<img src={banner} alt="" />
 		</div>
-		<div class="description">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius nesciunt tempore ipsum,
-			laboriosam
-		</div>
-		<div class="footer">
-			<div class="author">
-				<div class="avatar">
-					<img
-						src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=785&q=80 785w"
-						alt=""
-					/>
-				</div>
-				<p>Tatyana</p>
+		<div class="content">
+			<div class="header">
+				<p class="topic">{title}</p>
+				<p class="price">${price}/hr</p>
 			</div>
-			<p>See More ></p>
+			<div class="description">
+				{description.substring(0, 100)}
+			</div>
+			<div class="footer">
+				<div class="author">
+					<div class="avatar">
+						<img src={avatar} alt="" />
+					</div>
+					<p>{author}</p>
+				</div>
+				<p>See More ></p>
+			</div>
 		</div>
 	</div>
-</div>
 
 <style>
 	.wrapper {
-        width: 100%;
+		width: 100%;
+		max-width: 400px;
 		height: fit-content;
+		max-height: 430px;
 		border-radius: 7px;
 		overflow: hidden;
 		border-radius: 7px;
 		display: flex;
 		flex-direction: column;
 		cursor: pointer;
-		border: 1px solid #99c7a8;
+		border: 1px solid #2e611d36;
+		box-shadow: 0px 0px 10px #2e611d36;
 		color: var(--dark-green);
-
-	}
-	.wrapper:hover {
-		box-shadow:  0px 0px 10px 0px #c4def5;
 		transition: all 0.3s ease-in-out;
-		background-color: var(--dark-green);
-		color: white;
 	}
+	.wrapper:hover .image img {
+		transform: scale(1.3);
+		transition: all 0.3s ease-in-out;
+	}
+
 	.image {
 		width: 100%;
 		overflow: hidden;
@@ -75,9 +78,7 @@
 		color: #2e6101;
 		font-size: 1rem;
 	}
-	.wrapper:hover .price{
-		color: #75da1e;
-	}
+
 	.description {
 		opacity: 0.6;
 		font-weight: 500;
@@ -88,7 +89,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-        padding-top: 0.5rem;
+		padding-top: 0.5rem;
 	}
 	.avatar {
 		width: 30px;
@@ -110,5 +111,10 @@
 	.footer > p {
 		font-size: 0.9rem;
 		font-weight: 600;
+	}
+	@media (max-width: 900px) {
+		.content {
+			padding: 1rem;
+		}
 	}
 </style>

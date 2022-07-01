@@ -1,15 +1,19 @@
 <script lang="ts">
-	let y = 0
-	let height = 0
-	$: show = false
-	$: if(y > height - 200){
-		show = true
-	}else{
-		show = false
-	}
+	import { onMount } from 'svelte';
+
+	let y = 0;
+	let height = 0;
+	let show = false;
+	$: console.log(show)
+	$: if (y > height - 200) {
+			show = true;
+		} else {
+			show = false;
+		}
 </script>
-<svelte:window bind:scrollY="{y}" bind:outerHeight="{height}" />
-<div class="wrapper {show?'scrolled':''}" >
+
+<svelte:window bind:scrollY={y} bind:outerHeight={height} />
+<div class="wrapper {show ? 'scrolled' : ''}">
 	<div class="logo">
 		<p>
 			<svg
@@ -20,7 +24,13 @@
 				height="30.841"
 				viewBox="0 0 30.035 30.841"
 			>
-				<g id="Boundary" fill="{show? '#000':'#000'}" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+				<g
+					id="Boundary"
+					fill={show ? '#000' : '#000'}
+					stroke="rgba(0,0,0,0)"
+					stroke-width="1"
+					opacity="0"
+				>
 					<rect width="30.035" height="30.841" stroke="none" />
 					<rect x="0.5" y="0.5" width="29.035" height="29.841" fill="none" />
 				</g>
@@ -28,7 +38,7 @@
 					id="Path_bookshelf"
 					data-name="Path / bookshelf"
 					d="M11.012,3V23.7h4.006V3H11.012m4.006,2.76L20.358,23.7l4.006-1.38L19.023,4.38,15.017,5.76m-9.347,0V23.7H9.676V5.76H5.671M3,25.081v2.76H27.035v-2.76Z"
-					fill="{show? 'var(--dark-green)':'var(--dark-yellow)'}"
+					fill={show ? 'var(--dark-green)' : 'var(--dark-yellow)'}
 				/>
 			</svg>
 			Tisoe
@@ -60,7 +70,6 @@
 		z-index: 999999;
 		top: 0;
 		transition: all 0.3s ease-in-out;
-
 	}
 	.scrolled {
 		background-color: transparent;
@@ -68,7 +77,7 @@
 		background-color: white;
 		transition: all 0.3s ease-in-out;
 	}
-	.scrolled .logo p{
+	.scrolled .logo p {
 		color: black;
 	}
 	.scrolled .links ul li {
@@ -88,6 +97,7 @@
 		height: fit-content;
 		display: flex;
 		align-items: center;
+		font-weight: 500;
 	}
 	.links ul {
 		list-style: none;
@@ -121,9 +131,16 @@
 		gap: 0.6em;
 		color: white;
 	}
-	.scrolled button{
+	.scrolled button {
 		background: var(--dark-green);
 		transition: all 0.3s ease-in-out;
-
+	}
+	@media (max-width: 900px) {
+		.wrapper{
+			padding: var(--padding-mobile);
+		}
+		.links ul{
+			display: none;
+		}
 	}
 </style>

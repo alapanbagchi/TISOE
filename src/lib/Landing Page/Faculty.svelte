@@ -6,8 +6,8 @@
 <div class="wrapper">
 	<div class="section_description">
 		<div class="block">
-			<p class="about">Categories</p>
-			<p class="heading">A Robust Selection of Courses to choose from</p>
+			<p class="about">Faculty</p>
+			<p class="heading">Meet our teachers who'll guide you through your journey!</p>
 		</div>
 		<p class="description">
 			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quisquam ducimus commodi
@@ -38,31 +38,7 @@
 		overflow: hidden;
 		position: relative;
 	}
-	.data{
-		width: 100%;
-		height: 30%;
-		background-color: wheat;
-		position: absolute;
-		bottom: 0;
-		padding: 1rem;
-	}
-	.slug{
-		font-size: 0.8rem;
-		font-weight: 400;
-		background-color: var(--dark-green);
-		height: fit-content;
-		width: fit-content;
-		color: white;
-		padding: 0.3rem 0.8rem;
-		border-radius: 50px;
-	}
-	.title{
-		font-size: 1.2rem;
-		font-weight: 600;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+	
 	img {
 		width: 100%;
 		height: 100%;
@@ -87,7 +63,7 @@
 	}
 	.section_description {
 		display: flex;
-		gap: 0.5rem;
+		gap:2rem;
 	}
 	.block {
 		display: flex;
@@ -96,8 +72,8 @@
 	}
 	.heading {
 		width: fit-content;
-		font-size: 2.5rem;
-		font-weight: 600;
+		font-size: 2rem;
+		font-weight: 500;
 		color: var(--dark-green);
 		position: relative;
 	}

@@ -12,8 +12,8 @@
 </script>
 
 <div class="wrapper">
-	<!-- <Header /> -->
-	<!-- <Hero /> -->
+	<Header />
+	<Hero />
 	<AboutUs />
 	<Categories />
 	<Courses />
