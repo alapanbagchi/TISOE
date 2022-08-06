@@ -1,0 +1,305 @@
+.header {
+    padding: 150px 3% 60px;
+}
+
+.container {
+    max-width: 620px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.teacher_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher_top_wrapper {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+
+.large_avatar_wrapper {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border-radius: 500px;
+    background-color: #f5eee5;
+}
+
+.large_avatar_wrapper img {
+    max-width: 100%;
+}
+
+.stats_wrapper {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: -100%;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@media screen and (max-width: 991px) {
+    .stats_wrapper {
+        position: static;
+        margin-top: 24px;
+    }
+}
+
+.teacher_statistic {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 4px 12px 4px 4px;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #f3f6fb;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.teacher_icon_wrap {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+.teacher_detail {
+    margin-right: 4px;
+    font-weight: 700;
+}
+
+.author_name {
+    margin-top: 0px;
+    font-family: 'Eudoxussans Heading', sans-serif;
+    color: #161c27;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.paragraph {
+    color: #161c27;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+}
+
+.badge_wrapper {
+    display: flex;
+    max-width: 550px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.badge {
+    margin: 8px;
+    padding: 8px 24px;
+    border-radius: 50px;
+    background-color: #faf7f2;
+    color: #cab59a;
+}
+
+
+
+.about {
+    display: flex;
+    margin-top: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about .title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-family: 'Eudoxussans Heading', sans-serif;
+    color: #161c27;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.about .paragraph {
+    color: #161c27;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .list ul {
+        justify-items: center;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/*  Cards   */
+
+.list ul {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 1100px;
+    background-color: #F3F6FB;
+    padding: 38px;
+}
+
+
+.item .card {
+    height: 100%;
+    padding: 40px;
+    background-color: #fff;
+    max-width: 100%;
+    display: inline-block;
+    max-width: 510px;
+}
+
+.course_image_wrap {
+    position: relative;
+    overflow: hidden;
+    height: 256px;
+    margin-bottom: 32px;
+}
+
+.course_image_wrap img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+}
+
+@media screen and (max-width: 991px) {
+    .course_avatar {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+}
+
+.badge_wrap {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 16px;
+    bottom: 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.category_badge {
+    position: relative;
+    overflow: hidden;
+    margin-left: 8px;
+    padding: 12px 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(0, 0%, 100%, 0.15);
+    background-color: rgba(22, 28, 39, 0.5);
+    color: #fff;
+    font-weight: 400;
+}
+
+.price_badge {
+    position: relative;
+    overflow: hidden;
+    margin-left: 8px;
+    padding: 12px 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(0, 0%, 100%, 0.15);
+    background-color: rgba(22, 28, 39, 0.5);
+    color: #fff;
+    font-weight: 400;
+}
+
+.content_block h5 {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    color: #161c27;
+    font-family: 'Eudoxussans Heading', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.content_block p {
+    margin-bottom: 0px;
+    color: #232a37;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.author_wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.author_wrapper .course_avatar {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    margin-right: 20px;
+    border-radius: 100%;
+    background-color: #eefafe;
+}
+
+.author_wrapper .course_avatar img:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.author_wrapper .course_avatar img:nth-child(2) {
+    position: absolute;
+    left: auto;
+    top: -10%;
+    right: -10%;
+    bottom: auto;
+}
+
+.heading {
+    color: #161c27;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+
+.designation {
+    color: #161c27;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
