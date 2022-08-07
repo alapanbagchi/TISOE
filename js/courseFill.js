@@ -10,16 +10,16 @@ courses.forEach(course => {
             alt="">
         <div class="tags">
             <p class="tag">${course.topic}</p>
-            <p class="tag">${course.price} / hr</p>
+            <p class="tag">${course.price}.00 / hr</p>
         </div>
     </div>
     <div class="content">
         <h5>${course.title}</h5>
-        <p>${course.description}</p>
+        <p>${course.description.substring(0,100)}...</p>
         <div class="author">
             <div class="avatar">
                 <div class="teacher_image"> 
-                <img src="${course.avatar}"
+                <img src="${course.instructor.avatar}"
                     alt="">
                     </div>
                 <img class="verified"

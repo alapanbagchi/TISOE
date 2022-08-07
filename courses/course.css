@@ -128,7 +128,7 @@
     }
 }
 
-.link {
+.course_information .link {
     color: #161c27;
     text-decoration: none;
     white-space: nowrap;
@@ -140,7 +140,8 @@
 }
 .course_information .link:nth-child(2) {
     padding:  0px;
-    font-weight: 400;
+    font-weight: 600;
+    margin-left: 10px;
 }
 .arrow {
     margin-right: 4px;
@@ -260,6 +261,7 @@
         position: relative;
         top: 0px;
         max-width: none;
+        padding: 0;
     }
 }
 

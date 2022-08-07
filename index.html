@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TISOE</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="shared.css">
     <script src="./js/navbar.js"></script>
 
 </head>
@@ -20,7 +21,7 @@
                         src="https://assets.website-files.com/604d8c253d18c714a435bd9c/604dfdd82bdd865bbc17577d_Small.svg"
                         alt="">
                 </li>
-                <div onclick="navbar()"  class="menu_btn">
+                <div onclick="navbar()" class="menu_btn">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 30 30" width="24px"
                         height="25px">
                         <path
@@ -37,56 +38,62 @@
             </ul>
         </nav>
     </header>
-    
-    <section class="hero">
+
+
+    <section class="header">
         <div class="container">
-            <div class="hero_image_wrapper">
-                <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6099fceebc6c7693643515c2_Model%20Person%20Large.png" alt="">
-            </div>
-            <div class="hero_text_wrapper">
-                <div class="text">
-                    <h1>Launch your own online learning platform</h1>
-                    <div class="description">
-                        <div class="block">
-                            <div class="check"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="11"
-                                    viewBox="0 0 15 11" fill="none">
-                                    <path
-                                        d="M5.33336 8.64333L12.9934 0.9825L14.1725 2.16083L5.33336 11L0.0300293 5.69667L1.20836 4.51833L5.33336 8.64333Z"
-                                        fill="#161C27" />
-                                </svg>
-                            </div>
-                            <p>Supportive 1:1 coaching.
-    
-                            </p>
-                        </div>
-                        <div class="block">
-                            <div class="check"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="11"
-                                    viewBox="0 0 15 11" fill="none">
-                                    <path
-                                        d="M5.33336 8.64333L12.9934 0.9825L14.1725 2.16083L5.33336 11L0.0300293 5.69667L1.20836 4.51833L5.33336 8.64333Z"
-                                        fill="#161C27" />
-                                </svg>
-                            </div>
-                            <p>Skilled and experienced coaches.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cta">
-                        <input placeholder="Enter your email..." type="email">
-                        <button>Start Learning</button>
-                    </div>
-                    <div class="slogan">
-                        <div class="icon">
-                            <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/604daa4cf59e8f92a1e4b1fb_Quill%20Pen.svg"
+            <div class="hero_block">
+                <div class="hero_title_wrap">
+                    <h1 class="display_heading">Launch your own <br />online learning <br /> platform
+                    </h1>
+                    <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6099f639bc6c7644c834fee8_Accent%20White%20Line.svg"
+                        alt="">
+                </div>
+
+                <div class="checklist">
+                    <div class="feature_check">
+                        <div class="check_circle">
+                            <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/608f8a785ea8232c49135b39_Check%20Vector.svg"
                                 alt="">
                         </div>
-                        <p>Quillow is a multi-purpose education and business template, built to create success for you
-                            online.</p>
+                        <div class="text_block">Skilled and experienced coaches.</div>
+                    </div>
+                    <div class="feature_check">
+                        <div class="check_circle">
+                            <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/608f8a785ea8232c49135b39_Check%20Vector.svg"
+                                alt="">
+                        </div>
+                        <div class="text_block">Skilled and experienced coaches.</div>
                     </div>
                 </div>
+                <div class="cta">
+                    <button>Explore Courses</button>
+                </div>
+
+            </div>
+            <div class="detail_wrapper">
+                <div class="icon_circle"><img
+                        src="https://assets.website-files.com/604d8c253d18c714a435bd9c/604daa4cf59e8f92a1e4b1fb_Quill%20Pen.svg"
+                        loading="lazy" alt=""></div>
+                <div class="paragraph-large">Quillow is a multi-purpose education and business template, built to create
+                    success for you online.</div>
             </div>
         </div>
-       
+        <div class="hero_block_right">
+            <div class="hero_image_wrapper">
+                <a href="#" class="hero_lightbox ">
+                    <div class="play_button_large"><img
+                            src="https://assets.website-files.com/604d8c253d18c714a435bd9c/604dafed1a63f0216252d4f0_Play%20Icon%20Dark.svg"
+                            loading="lazy" alt=""></div>
+                </a>
+                <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/604d8c253d18c774c935bddc_Primary-Home-Header.png"
+                    alt="">
+                <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/604daad0f59e8f950ae4b32e_Hero%20Card%20Asset.svg"
+                    alt="" class="card_accent">
+            </div>
+
+        </div>
+
     </section>
     <section class="additional_features">
         <div class="container">
@@ -237,20 +244,19 @@
         </div>
     </section>
 
-    <!-- <section class="testimonials">
-        <div class="container">
-            <h4>Testimonials</h4>
-            <div class="testimonial">
-                <p class="review">“After I started learning design with Quillow, I realized that I had improved to very
-                    advanced levels. While I am studying at my university, I design as an additional</p>
-                <p class="reviewer"><strong>James Lee</strong>, Student @SabanciUniversity</p>
-            </div>
+    <section class="get_started">
+        <div class="title_wrap">
+            <h2>Start Learning from <br />our professionals today!</h2>
         </div>
-    </section> -->
+        <form action="">
+            <input type="text" name="" placeholder="Enter your email">
+            <button type="submit">Get Stared Today</button>
+        </form>
+    </section>
 </body>
+<script type="module" src="./data/teachers.js"></script>
 <script type="module" src="./data/courses.js"></script>
 <script type="module" src="./js/courseFill.js"></script>
-<script type="module" src="./data/teachers.js"></script>
 <script type="module" src="./js/teacherFill.js"></script>
 
 <script defer src="./js/slider.js"></script>
