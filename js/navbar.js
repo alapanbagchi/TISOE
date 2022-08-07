@@ -26,8 +26,8 @@ const content = `<ul>
 </div>
 <div id="links" class="links">
     <li class="link"><a href="about.html">About Us</a></li>
-    <li class="link"><a href="courses.html">Courses</a></li>
-    <li class="link"><a href="teachers.html">Teachers</a></li>
+    <li class="link"><a href="courses">Courses</a></li>
+    <li class="link"><a href="teachers">Teachers</a></li>
     <button><a href="contactus.html">Contact Us</a></button>
 </div>
 </ul>`
