@@ -120,7 +120,7 @@ buttons.forEach(button => {
                 </div>
             </a>
             </li>`
-            document.querySelector('.course_list').innerHTML = content
+
         })
     })
 })
