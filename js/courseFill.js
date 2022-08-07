@@ -2,7 +2,19 @@ import {courses} from '../data/courses.js';
 
 let content = ''
 
+//Courses is a map with each value containing a topic property. Store one course of each topic in an array.
+let teachers = [];
+let display = []
 courses.forEach(course => {
+    if(!teachers.includes(course.instructor.name)){
+        teachers.push(course.instructor.name)
+        display.push(course)
+    } 
+} )
+
+console.log(display)
+
+display.forEach(course => {
     content += `<div class="slides">
     <div class="course_image">
 
@@ -27,8 +39,8 @@ courses.forEach(course => {
                     alt="">
             </div>
             <div class="data">
-                <p class="teacher_name">Tatiyana Iliev</p>
-                <p>Mandarin Teacher</p>
+                <p class="teacher_name">${course.instructor.name}</p>
+                <p>${course.instructor.designation}</p>
             </div>
         </div>
     </div>

@@ -8,7 +8,10 @@
     -webkit-font-smoothing: antialiased;
 }
 
-
+a{
+    text-decoration: none;
+    color: unset;
+}
 nav {
     background-color: transparent;
     padding: 10px 3%;
@@ -45,12 +48,13 @@ ul {
 .links {
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
 .link {
     color: #000;
     font-size: 14px;
-    padding: 14px 20px;
+    padding: 0 20px;
     font-weight: 600;
     opacity: 0.9;
     cursor: pointer;

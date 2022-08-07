@@ -66,21 +66,82 @@ courses.set('Custom/Artwork Help', {
 courses.set('Algebra 1 and Up', {
     title: "Algebra 1 & Up",
     full_name: "Algebra 1 & Up",
-    description: '',
+    description: 'Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet ',
     price: '$25',
-    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659890947/Tisoe/Courses/Homework.webp',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659895829/Tisoe/Courses/Algaebra%201%20and%20Up.webp',
     instructor: teachers.get('rj_reiff'),
     topic: 'Mathematics'
 })
 
-courses.set('Pre-Algebra and below', {
-    title: "Pre-Algebra and below",
-    full_name: "Pre-Algebra and below",
-    description: '',
+courses.set('Pre-Algebra and Below', {
+    title: "Pre-Algebra and Below",
+    full_name: "Pre-Algebra and Below",
+    description: 'Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet ',
     price: '$20',
-    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659890947/Tisoe/Courses/Homework.webp',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659895898/Tisoe/Courses/Pre%20algaebra.webp',
     instructor: teachers.get('rj_reiff'),
     topic: 'Mathematics'
+})
+
+courses.set('Abstract Math and Proofs', {
+    title: "Abstract Math and Proofs",
+    full_name: "Intro to Abstract Math and Proofs",
+    description: 'This introduction to abstract math is an introduction to what "real" mathematicians do. This course will introduce logic, logical arguments, mathematical proofs, and concepts like infinity.This course is suitable for any curious students who have taken Algebra 1 (one full year of algebra).',
+    price: '$20',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659896077/Tisoe/Courses/Abstract%20Math%20and%20Proof.avif',
+    instructor: teachers.get('rj_reiff'),
+    topic: 'Mathematics'
+})
+
+courses.set('Mandarin Chinese for the Beginners', {
+    title: "Mandarin Chinese for the Beginners",
+    full_name: "Mandarin Chinese for the Beginners-Laying a solid foundation and learning authentic and practical Chinese",
+    description: "This course is for the complete beginners to Mandarin Chinese. In view of the basic and important role of Pinyin in Mandarin, the general knowledge of Pinyin will betaught in the first period, including the pronunciation of initials, finals, different tones,and the most common rules. Generally, 3.5 to 5 hours will be cost in this period, andyou could pronounce some simple monosyllabic and disyllabic words after learning.Then you move to the next period, and the HSK textbooks 1 to 3 are recommended asthe learning material. You will learn the most common-used words, phrases, sentencepatterns, characters, and some interesting knowledge of Chinese culture. Besides, considering Chinese is a tone language, the pronunciation practice is provided throughout the whole learning process.After this period's learning, you will master about 900 characters and over 2000 words, and your Chinese level will reach to B1, which means that you possess the basic communicative skills to live and travel in C",
+    price: '$15',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659897242/Tisoe/Courses/Conversation%20practice.jpg',
+    instructor: teachers.get('yishan'),
+    topic: 'Language'
+})
+
+courses.set('Conversation Practice', {
+    title: "Conversation Practice",
+    full_name: "Conversation Practice - Enlarging Chinese vocabulary and completing grammar",
+    description: 'This course is for the people who could speak some Chinese and hope to enlarge their Chinese vocabulary or improve their speaking. There are two learning patterns for you to choose, topic discussion and reading comprehension. The topics will be chosen according to your preference, and the subjects such as Chinese culture, history, folk customs, hot-spots, food, celebrities can all be involved. As for the reading comprehension, the reading materials will be selected based on your Chinese level, and every time after reading, different questions about the content will be asked, and different opinions will be talked about. By doing conversation practice, your Chinese vocabulary will be expanded and the grammar will be completed. Gradually, your communicational ability in Chinese will be developed',
+    price: '$12',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659897306/Tisoe/Courses/mandarin%20for%20beginners.webp',
+    instructor: teachers.get('yishan'),
+    topic: 'Language'
+})
+
+courses.set('Homework Help', {
+    title: "Homework Help",
+    full_name: "Homework Help - Customized tutoring service to resolving your homework problems and your preference textbook",
+    description: 'This course is for the people that have learned Chinese in school. Customized tutoring service will be provided to assist students with homework problems. This course is also suitable for the ones who hope to learn Chinese by using their preference textbooks.',
+    price: '$12',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659897422/Tisoe/Courses/Chinese%20Homework.jpg',
+    instructor: teachers.get('yishan'),
+    topic: 'Language'
+})
+
+courses.set('Japanese reading and writing', {
+    title: "Japanese reading and writing",
+    full_name: " Japanese reading and writing (Hiragana, Katakana)",
+    description: 'You will learn how to read hiragana and katakana with some words. After reading Hiragana and Katakana, let’s practice to write your name in Japanese.',
+    price: '$20',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659899452/Tisoe/Courses/japanese%20Writing.webp',
+    instructor: teachers.get('erina'),
+    topic: 'Language'
+})
+
+
+courses.set('Japanese speaking', {
+    title: "Japanese speaking",
+    full_name: "Japanese speaking",
+    description: 'You will learn how to start conversation. And let’s learn some phrases we frequently use. Also we can practice conversations in particular situations like an airport or restaurant.',
+    price: '$12',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659899594/Tisoe/Courses/Japanese%20Speaking.webp',
+    instructor: teachers.get('erina'),
+    topic: 'Language'
 })
 
 
