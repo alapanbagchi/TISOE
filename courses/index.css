@@ -638,7 +638,8 @@ body {
 }
 
 .topic {
-    padding: 0.5rem 1rem;
+    padding: 9px 30px;
+
     cursor: pointer;
     border-radius: 7px;
 
