@@ -8,7 +8,8 @@ const navbar = (e) => {
         document.getElementById('links').classList.add('active')
     }
 }
-const baseurl = window.location.href.split('/').filter(item=>item!='').splice(0, 2).join('//')  
+let GITHUBPROD = '/TISOE'
+const baseurl = window.location.href.split('/').filter(item=>item!='').splice(0, 2).join('//')+GITHUBPROD  
 const content = `<ul>
 <li class="logo">
     <a href="${baseurl}/index.html">
