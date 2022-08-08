@@ -4,9 +4,9 @@ let content = ''
 
 
 //For initial Hydration of the page
-courses.forEach(course => {
+courses.forEach((course, id) => {
     content += `<li class="item">
-    <a href="" class="card">
+    <a href="/courses/course.html?id=${id}" class="card">
         <div class="course_image_wrap">
             <img src="${course.image}"
                 alt="">
@@ -67,21 +67,18 @@ buttons.forEach(button => {
         button.classList.add('active')
         filteredCourses = []
         content = ''
-
         //Filtering the courses based on the topic selected
         filteredCourses = [...courses.values()].filter(course => {
             return filter.includes(course.topic)
         })
-
         //if no topic is selected, display all courses
         if (filteredCourses.length == 0 || filter[0] == '') {
             filteredCourses = courses
         }
-
         //Adding the courses to the page
-        filteredCourses.forEach(course => {
+        filteredCourses.forEach((course, id) => {
             content += `<li class="item">
-            <a href="" class="card">
+            <a href="/courses/course.html?id=${id}" class="card">
                 <div class="course_image_wrap">
                     <img src="${course.image}"
                         alt="">
@@ -120,6 +117,7 @@ buttons.forEach(button => {
                 </div>
             </a>
             </li>`
+            document.querySelector('.course_list').innerHTML = content
 
         })
     })
