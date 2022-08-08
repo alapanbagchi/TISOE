@@ -8,7 +8,7 @@ console.log(coursesArr)
 //For initial Hydration of the page
 coursesArr.forEach((course, id) => {
     content += `<li class="item">
-    <a href="course.html?id=${id+1}" class="card">
+    <a href="course.html?id=${course[0]}" class="card">
         <div class="course_image_wrap">
             <img src="${course[1].image}"
                 alt="">
@@ -82,7 +82,7 @@ buttons.forEach(button => {
         filteredCourses.forEach((course, id) => {
             console.log(course)
             content += `<li class="item">
-            <a href="/courses/course.html?id=${course[0]}" class="card">
+            <a href="course.html?id=${course[0]}" class="card">
                 <div class="course_image_wrap">
                     <img src="${course[1].image}"
                         alt="">
