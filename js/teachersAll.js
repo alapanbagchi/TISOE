@@ -8,7 +8,7 @@ teachers.forEach((teacher,id) => {
             alt="">
     </a>
     <div class="instructor_block">
-        <a href="" class="teacher">
+        <a href="teacher.html?id=${id}" class="teacher">
             <h3 class="title">${teacher.name}</h3>
             <div class="designation">${teacher.designation}</div>
         </a>
