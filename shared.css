@@ -67,10 +67,10 @@ ul {
 
 nav button {
     min-height: 52px;
+    border: none;
     padding: 0 32px;
-    background-color: #161c27;
-    border: 1px solid #ebeefa;
-    color: #fff;
+    background-color: #EEFAFE;
+    color: #161c27;
     cursor: pointer;
     margin-left: auto;
     font-weight: 500;
@@ -78,8 +78,8 @@ nav button {
 }
 
 nav button:hover {
-    background-color: #ebeefa;
-    color: #000;
+    background-color: #161c27;
+    color: #EEFAFE;
     transition: all 0.3s ease-in-out;
 }
 
@@ -122,6 +122,7 @@ nav button:hover {
 
     .links button {
         margin-left: unset;
+        width: 100%;
     }
 
     .menu_btn {
