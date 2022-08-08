@@ -4,10 +4,10 @@ import {teachers} from '../data/teachers.js';
 
 console.log(teachers.values())
 let teacherContent = ''
-
 teachers.forEach(teacher => {
-    teacherContent += `<a style="margin-right:32px" href="/teachers/teacher.html?id=${teacher.name.toLowerCase().replace(' ','_')}">
-    <div class="teacher_slides slides">
+    teacherContent += `
+    <div style="margin-right:32px" class="teacher_slides slides">
+    <a  href="/teachers/teacher.html?id=${teacher.name.toLowerCase().replace(' ','_')}">
     <div class="teacher_slide_image">
         <img src="${teacher.avatar}"
             alt="">
@@ -21,9 +21,9 @@ teachers.forEach(teacher => {
         </div>
         <div class="blur"></div>
     </div>
-</div></a>`
+    </a>
+</div>`
     document.getElementById('teacher_wrapper').innerHTML = teacherContent
 })
 
-//<p class="course_count">${teacher.course_count}</p>
 
