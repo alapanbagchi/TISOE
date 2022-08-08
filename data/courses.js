@@ -88,7 +88,7 @@ courses.set('9', {
     full_name: "Intro to Abstract Math and Proofs",
     description: 'This introduction to abstract math is an introduction to what "real" mathematicians do. This course will introduce logic, logical arguments, mathematical proofs, and concepts like infinity.This course is suitable for any curious students who have taken Algebra 1 (one full year of algebra).',
     price: '$20',
-    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659896077/Tisoe/Courses/Abstract%20Math%20and%20Proof.avif',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659896077/Tisoe/Courses/Abstract%20Math%20and%20Proof.webp',
     instructor: teachers.get('rj_reiff'),
     topic: 'Mathematics'
 })
@@ -98,7 +98,7 @@ courses.set('10', {
     full_name: "Mandarin Chinese for the Beginners-Laying a solid foundation and learning authentic and practical Chinese",
     description: "This course is for the complete beginners to Mandarin Chinese. In view of the basic and important role of Pinyin in Mandarin, the general knowledge of Pinyin will betaught in the first period, including the pronunciation of initials, finals, different tones,and the most common rules. Generally, 3.5 to 5 hours will be cost in this period, andyou could pronounce some simple monosyllabic and disyllabic words after learning.Then you move to the next period, and the HSK textbooks 1 to 3 are recommended asthe learning material. You will learn the most common-used words, phrases, sentencepatterns, characters, and some interesting knowledge of Chinese culture. Besides, considering Chinese is a tone language, the pronunciation practice is provided throughout the whole learning process.After this period's learning, you will master about 900 characters and over 2000 words, and your Chinese level will reach to B1, which means that you possess the basic communicative skills to live and travel in C",
     price: '$15',
-    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659897242/Tisoe/Courses/Conversation%20practice.jpg',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659897242/Tisoe/Courses/Conversation%20practice.webp',
     instructor: teachers.get('yishan'),
     topic: 'Language'
 })
@@ -118,7 +118,7 @@ courses.set('12', {
     full_name: "Homework Help - Customized tutoring service to resolving your homework problems and your preference textbook",
     description: 'This course is for the people that have learned Chinese in school. Customized tutoring service will be provided to assist students with homework problems. This course is also suitable for the ones who hope to learn Chinese by using their preference textbooks.',
     price: '$12',
-    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659897422/Tisoe/Courses/Chinese%20Homework.jpg',
+    image: 'https://res.cloudinary.com/alapanbagchi/image/upload/v1659897422/Tisoe/Courses/Chinese%20Homework.webp',
     instructor: teachers.get('yishan'),
     topic: 'Language'
 })

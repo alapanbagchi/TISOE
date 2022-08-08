@@ -45,12 +45,15 @@
     justify-content: center;
     align-items: flex-start;
 }
+
 @media screen and (max-width: 991px) {
     .stats_wrapper {
         position: static;
         margin-top: 24px;
     }
 }
+
+
 
 .teacher_statistic {
     display: flex;
@@ -171,6 +174,13 @@
     padding: 38px;
 }
 
+@media screen and (max-width: 991px) {
+    .list ul {
+        padding: 38px 0;
+    }
+    
+
+}
 
 .item .card {
     height: 100%;
