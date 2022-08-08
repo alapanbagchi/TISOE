@@ -286,10 +286,11 @@ body {
 
 @media screen and (max-width: 484px) {
     .hero_title_wrap img {
-        left:-7%;
-        top:62%;
+        left: -7%;
+        top: 62%;
     }
 }
+
 .header .hero_block_right .hero_image_wrapper {
     position: relative;
     display: flex;
@@ -468,13 +469,15 @@ body {
     -o-object-position: 50% 50%;
     object-position: 50% 50%;
 }
+
 @media screen and (max-width: 991px) {
-    .course_avatar{
+    .course_avatar {
         width: 50px !important;
         height: 50px !important;
     }
-    
+
 }
+
 .badge_wrap {
     position: absolute;
     left: auto;
@@ -620,8 +623,14 @@ body {
     border-radius: 500px;
     background-color: #fff;
     font-size: 14px;
-    overflow:auto;
+    overflow: auto;
     max-width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+   .topics{
+    justify-content: flex-start;
+   }
 }
 
 .topic.active {
@@ -726,8 +735,8 @@ form button {
 }
 
 @media screen and (max-width: 479px) {
-    .card{
-        padding:20px !important;
+    .card {
+        padding: 20px !important;
     }
 }
 
