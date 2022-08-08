@@ -1,46 +1,49 @@
 import { courses } from '../data/courses.js';
 
 let content = ''
+const coursesArr = [...courses].filter(course => {return course})
 
+console.log(coursesArr)
 
 //For initial Hydration of the page
-courses.forEach((course, id) => {
+coursesArr.forEach((course, id) => {
+    console.log(course)
     content += `<li class="item">
     <a href="/courses/course.html?id=${id}" class="card">
         <div class="course_image_wrap">
-            <img src="${course.image}"
+            <img src="${course[1].image}"
                 alt="">
             <div class="badge_wrap">
                 <div class="category_badge">
                     <div class="badge_text">
-                        ${course.topic}
+                        ${course[1].topic}
                     </div>
                 </div>
                 <div class="price_badge">
                     <div class="badge_text">
-                        ${course.price}.00
+                        ${course[1].price}.00
                     </div>
                 </div>
             </div>
         </div>
     
         <div class="content_block">
-            <h5>${course.title}</h5>
-            <p>${course.description.substring(0, 100)}...
+            <h5>${course[1].title}</h5>
+            <p>${course[1].description.substring(0, 100)}...
             </p>
         </div>
         <div class="author_wrapper">
             <div class="course_avatar">
-                <img src="${course.instructor.avatar}"
+                <img src="${course[1].instructor.avatar}"
                     alt="">
                 <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6099f3f97e59b6d4a1321644_Verified%20Badge.svg"
                     alt="">
             </div>
             <div class="course_author">
                 <div class="heading">
-                    ${course.instructor.name}
+                    ${course[1].instructor.name}
                 </div>
-                <div class="designation">${course.instructor.designation}</div>
+                <div class="designation">${course[1].instructor.designation}</div>
             </div>
         </div>
     </a>
@@ -68,9 +71,10 @@ buttons.forEach(button => {
         filteredCourses = []
         content = ''
         //Filtering the courses based on the topic selected
-        filteredCourses = [...courses.values()].filter(course => {
-            return filter.includes(course.topic)
+        filteredCourses = coursesArr.filter(course => {
+            return filter.includes(course[1].topic)
         })
+        console.log(filteredCourses)
         //if no topic is selected, display all courses
         if (filteredCourses.length == 0 || filter[0] == '') {
             filteredCourses = courses
@@ -78,41 +82,41 @@ buttons.forEach(button => {
         //Adding the courses to the page
         filteredCourses.forEach((course, id) => {
             content += `<li class="item">
-            <a href="/courses/course.html?id=${id}" class="card">
+            <a href="/courses/course.html?id=${course[0]}" class="card">
                 <div class="course_image_wrap">
-                    <img src="${course.image}"
+                    <img src="${course[1].image}"
                         alt="">
                     <div class="badge_wrap">
                         <div class="category_badge">
                             <div class="badge_text">
-                                ${course.topic}
+                                ${course[1].topic}
                             </div>
                         </div>
                         <div class="price_badge">
                             <div class="badge_text">
-                                ${course.price}.00
+                                ${course[1].price}.00
                             </div>
                         </div>
                     </div>
                 </div>
             
                 <div class="content_block">
-                    <h5>${course.title}</h5>
-                    <p>${course.description.substring(0, 100)}...
+                    <h5>${course[1].title}</h5>
+                    <p>${course[1].description.substring(0, 100)}...
                     </p>
                 </div>
                 <div class="author_wrapper">
                     <div class="course_avatar">
-                        <img src="${course.instructor.avatar}"
+                        <img src="${course[1].instructor.avatar}"
                             alt="">
                         <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6099f3f97e59b6d4a1321644_Verified%20Badge.svg"
                             alt="">
                     </div>
                     <div class="course_author">
                         <div class="heading">
-                            ${course.instructor.name}
+                            ${course[1].instructor.name}
                         </div>
-                        <div class="designation">${course.instructor.designation}</div>
+                        <div class="designation">${course[1].instructor.designation}</div>
                     </div>
                 </div>
             </a>
