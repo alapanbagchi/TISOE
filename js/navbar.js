@@ -8,10 +8,10 @@ const navbar = (e) => {
         document.getElementById('links').classList.add('active')
     }
 }
-
+const baseurl = window.location.href.split('/').filter(item=>item!='').splice(0, 2).join('//')  
 const content = `<ul>
 <li class="logo">
-    <a href="index.html">
+    <a href="${baseurl}/index.html">
         <img width="100px"
             src="https://res.cloudinary.com/alapanbagchi/image/upload/v1659898862/Tisoe/assets/TISOE.svg"
             alt="">
@@ -25,10 +25,10 @@ const content = `<ul>
     </svg>
 </div>
 <div id="links" class="links">
-    <li class="link"><a href="about.html">About Us</a></li>
-    <li class="link"><a href="courses">Courses</a></li>
-    <li class="link"><a href="teachers">Teachers</a></li>
-    <button><a href="contactus.html">Contact Us</a></button>
+    <li class="link"><a href="${baseurl}/about.html">About Us</a></li>
+    <li class="link"><a href="${baseurl}/courses">Courses</a></li>
+    <li class="link"><a href="${baseurl}/teachers">Teachers</a></li>
+    <button><a href="${baseurl}/contactus.html">Contact Us</a></button>
 </div>
 </ul>`
 
