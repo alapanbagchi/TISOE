@@ -15,7 +15,7 @@ courses.forEach(course => {
 console.log(display)
 
 display.forEach(course => {
-    content += `<div class="slides">
+    content += `<div style="margin-right:32px" class="slides">
     <div class="course_image">
 
         <img src="${course.image}"

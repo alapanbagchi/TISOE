@@ -1,7 +1,7 @@
 const teachers = new Map()
 
 teachers.set('tatyana_iliev', {
-    name: "Tatiyana Iliev",
+    name: "Tatyana Iliev",
     description: "Hi, I'm Tatyana Ilieva, the creator of TISOE. I am a high school student in central coast California, and I am passionate about art, science, coding, and learning! I want to help others reach their academic potentials and be able to enjoy learning as well.I have been pursuing art since a very young age, taking a variety of drawing, painting, and even graphic design classes. I am excited to have the opportunity to share my experience with you!",
     designation: "Art & Design",
     avatar: "https://res.cloudinary.com/alapanbagchi/image/upload/v1659872863/Tisoe/Teachers/Tatyana.jpg",

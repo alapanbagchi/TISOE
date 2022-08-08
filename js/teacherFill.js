@@ -6,7 +6,7 @@ console.log(teachers.values())
 let teacherContent = ''
 
 teachers.forEach(teacher => {
-    teacherContent += `<a href="/teachers/teacher.html?id=${teacher.name.toLowerCase().replace(' ','_')}">
+    teacherContent += `<a style="margin-right:32px" href="/teachers/teacher.html?id=${teacher.name.toLowerCase().replace(' ','_')}">
     <div class="teacher_slides slides">
     <div class="teacher_slide_image">
         <img src="${teacher.avatar}"

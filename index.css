@@ -464,7 +464,6 @@ body {
     max-width: 510px;
     min-width: 510px;
     cursor: pointer;
-    margin-right: 32px;
 }
 
 @media screen and (max-width:542px) {
