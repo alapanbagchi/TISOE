@@ -25,6 +25,7 @@
     position: relative;
     width: 260px;
     height: 260px;
+    overflow: hidden;
     border-radius: 500px;
     background-color: #f5eee5;
 }
@@ -102,6 +103,7 @@
 .badge_wrapper {
     display: flex;
     max-width: 550px;
+    font-weight: 500;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
@@ -112,7 +114,7 @@
     padding: 8px 24px;
     border-radius: 50px;
     background-color: #faf7f2;
-    color: #cab59a;
+    color: #ae9c85;
 }
 
 
@@ -298,6 +300,7 @@
 }
 
 .designation {
+    margin-top: 5px;
     color: #161c27;
     font-size: 14px;
     font-weight: 400;

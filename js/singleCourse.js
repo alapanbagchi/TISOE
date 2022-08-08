@@ -22,28 +22,28 @@ const courseTemplate = `<div class="wrapper">
                         <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6099f79ce274acd86ad052e9_Check%20Circle.svg"
                             alt="">
                         <div class="paragraph_large">
-                            Active Community
+                            Detailed Course
                         </div>
                     </div>
                     <div class="check_wrapper">
                         <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6099f79ce274acd86ad052e9_Check%20Circle.svg"
                             alt="">
                         <div class="paragraph_large">
-                            Active Community
+                            Experienced Teacher
                         </div>
                     </div>
                     <div class="check_wrapper">
                         <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6099f79ce274acd86ad052e9_Check%20Circle.svg"
                             alt="">
                         <div class="paragraph_large">
-                            Active Community
+                            Attention to Detail
                         </div>
                     </div>
                     <div class="check_wrapper">
                         <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6099f79ce274acd86ad052e9_Check%20Circle.svg"
                             alt="">
                         <div class="paragraph_large">
-                            Active Community
+                            Flexible Schedule
                         </div>
                     </div>
                 </div>
