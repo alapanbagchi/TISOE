@@ -3,7 +3,7 @@ import { teachers } from '../data/teachers.js'
 let content = ''
 teachers.forEach((teacher,id) => {
     content += `<li class="item">
-    <a href="/teachers/teacher.html?id=${id}" class="card">
+    <a href="teacher.html?id=${id}" class="card">
         <img src="${teacher.avatar}"
             alt="">
     </a>
