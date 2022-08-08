@@ -7,9 +7,8 @@ console.log(coursesArr)
 
 //For initial Hydration of the page
 coursesArr.forEach((course, id) => {
-    console.log(course)
     content += `<li class="item">
-    <a href="/courses/course.html?id=${id}" class="card">
+    <a href="course.html?id=${id+1}" class="card">
         <div class="course_image_wrap">
             <img src="${course[1].image}"
                 alt="">
@@ -77,10 +76,11 @@ buttons.forEach(button => {
         console.log(filteredCourses)
         //if no topic is selected, display all courses
         if (filteredCourses.length == 0 || filter[0] == '') {
-            filteredCourses = courses
+            filteredCourses = coursesArr
         }
         //Adding the courses to the page
         filteredCourses.forEach((course, id) => {
+            console.log(course)
             content += `<li class="item">
             <a href="/courses/course.html?id=${course[0]}" class="card">
                 <div class="course_image_wrap">
