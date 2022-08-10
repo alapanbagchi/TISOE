@@ -72,12 +72,14 @@ buttons.forEach(button => {
         filteredCourses = coursesArr.filter(course => {
             return filter.includes(course[1].topic)
         })
+        console.log(filteredCourses)
         //if no topic is selected, display all courses
         if (filteredCourses.length == 0 || filter[0] == '') {
             filteredCourses = coursesArr
         }
         //Adding the courses to the page
         filteredCourses.forEach((course, id) => {
+            console.log(course)
             content += `<li class="item">
             <a href="course.html?id=${course[0]}" class="card">
                 <div class="course_image_wrap">
