@@ -14,7 +14,6 @@ courses.forEach((course,id) => {
 
 
 display.forEach(course => {
-    console.log(course)
     content += `<div style="margin-right:32px" class="slides">
     <a href="courses/course.html?id=${course.id}">
     <div class="course_image">

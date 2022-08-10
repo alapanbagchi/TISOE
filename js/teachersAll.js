@@ -17,5 +17,4 @@ teachers.forEach((teacher,id) => {
     </div>
 </li>`
 })
-console.log(document.querySelector('.teacher_list'))
 document.querySelector('.teacher_list').innerHTML = content

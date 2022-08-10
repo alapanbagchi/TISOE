@@ -12,6 +12,7 @@ function Slider(new_class) {
     this.current = 0
     this.shift = getComputedStyle(this.items[0]).transform === 'none' || getComputedStyle(this.items[0]).transform.split(',')[4] == this.slideWidth ? 0 : getComputedStyle(this.items[0]).transform.split(',')[4]
     this.slideWidth = this.items[0].getBoundingClientRect().width + 32
+    console.log(this.shift, this.slideWidth)
     this.isSliding = false
     this.addEventListeners = function () {
         this.buttons.forEach(button => {
@@ -22,10 +23,9 @@ function Slider(new_class) {
     this.slide = event => {
         if (!this.isSliding) {
             this.isSliding = true
-            console.log("none",getComputedStyle(this.items[0]).transform==='none')
-            console.log("0",getComputedStyle(this.items[0]).transform === 0)
-
+            console.log(event.target)
             if (event.target === this.buttons[1]) {
+
                 if (this.current < this.items.length - 1) {
                     this.current++;
                     this.shift -= this.slideWidth
@@ -34,6 +34,7 @@ function Slider(new_class) {
                         slide.style.transition = 'all 0.5s ease-in-out'
                     })
                 } else {
+
                     this.current = 0
                     this.shift = 0
                     this.items.forEach(slide => {
@@ -59,3 +60,48 @@ function Slider(new_class) {
     }
 }
 
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;
+var yDown = null;
+
+function getTouches(evt) {
+    return evt.touches
+}
+
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+};
+
+const wrappers = [...document.getElementsByClassName('slider_wrapper')]
+console.log(wrappers)
+function handleTouchMove(evt) {
+    if (!xDown || !yDown) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
+        if (xDiff > 0 && evt.path.some(el => wrappers.includes(el))) {
+           const wrap = evt.path.find(el => wrappers.includes(el))
+           const controls = document.querySelector('#' + wrap.id).nextElementSibling
+           const button = controls.querySelector('.' + [...controls.classList] + ' .left')
+           button.click()
+                
+        } else {
+            const wrap = evt.path.find(el => wrappers.includes(el))
+           const controls = document.querySelector('#' + wrap.id).nextElementSibling
+           const button = controls.querySelector('.' + [...controls.classList] + ' .right')
+           button.click()
+        }
+    }
+    xDown = null;
+};

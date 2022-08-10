@@ -7,7 +7,6 @@ const teacher = teachers.get(id.toString())
 
 //Get courses taught by the same instructor
 const coursesTaught = [...courses].filter(course => [...course][1].instructor.name === teacher.name)
-console.log(coursesTaught)
 
 let about = `<div class="container">
 <div class="teacher_wrapper">
@@ -62,7 +61,6 @@ document.querySelector('.teacher_aboutme').innerHTML = about
 let coursesTaughtTemplate = ``
 
 Array.from(coursesTaught.values()).forEach((course) => {
-    console.log(course)
     coursesTaughtTemplate += `<li class="item">
                     <a href="../courses/course.html?id=${course[0]}" class="card">
                         <div class="course_image_wrap">

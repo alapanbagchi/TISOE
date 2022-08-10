@@ -1,9 +1,7 @@
 import { courses } from "../data/courses.js";
 //Get the id from the url
-console.log(courses)
 const id = window.location.search.split('?id=')[1]
 const course = courses.get(id.toString())
-console.log(course)
 const courseTemplate = `<div class="wrapper">
 <div class="header_block">
     

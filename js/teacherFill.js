@@ -2,7 +2,6 @@
 import {teachers} from '../data/teachers.js';
 
 
-console.log(teachers.values())
 let teacherContent = ''
 teachers.forEach(teacher => {
     teacherContent += `
