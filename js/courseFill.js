@@ -13,7 +13,7 @@ courses.forEach((course,id) => {
 } )
 
 
-display.forEach(course => {
+display.forEach((course,i) => {
     content += `<div style="margin-right:32px" class="slides">
     <a href="courses/course.html?id=${course.id}">
     <div class="course_image">

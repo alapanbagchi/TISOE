@@ -1,9 +1,9 @@
+
 const footercontent = `<section class=" get_started">
-<div class=" title_wrap">
+<div class="animate__up title_wrap">
     <h2>Start Learning from <br />our professionals today!</h2>
 </div>
-<form action="">
-    <input type="text" name="" placeholder="Enter your email">
+<form class="animate__up animate__delay__400" action="">
     <button type="submit">Get Stared Today</button>
 </form>
 </section>`

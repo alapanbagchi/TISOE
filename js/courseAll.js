@@ -6,7 +6,7 @@ const coursesArr = [...courses].filter(course => {return course})
 
 //For initial Hydration of the page
 coursesArr.forEach((course, id) => {
-    content += `<li class="item">
+    content += `<li class="animate__up animate__delay__200 item">
     <a href="course.html?id=${course[0]}" class="card">
         <div class="course_image_wrap">
             <img src="${course[1].image}"

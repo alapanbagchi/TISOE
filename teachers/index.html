@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,23 +20,23 @@
 <section class="header">
     <div class="container">
         <div class="hero_block">
-            <div class="hero_title_wrap">
+            <div class="animate__up hero_title_wrap">
                 <h1 class="display_heading">Professional <br />Experienced Teachers</h1>
                 <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6099f639bc6c7644c834fee8_Accent%20White%20Line.svg"
                     alt="">
             </div>
-            <div class="paragraph_hero">
+            <div class="animate__up animate__delay__200 paragraph_hero">
                 Use Figma to get a job in UI Design, User Interface, User Experience design, UX design & Web Design
             </div>
             <div class="checklist">
-                <div class="feature_check">
+                <div class="animate__up animate__delay__400 feature_check">
                     <div class="check_circle">
                         <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/608f8a785ea8232c49135b39_Check%20Vector.svg"
                             alt="">
                     </div>
                     <div class="text_block">Skilled and experienced coaches.</div>
                 </div>
-                <div class="feature_check">
+                <div class="animate__up animate__delay__600 feature_check">
                     <div class="check_circle">
                         <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/608f8a785ea8232c49135b39_Check%20Vector.svg"
                             alt="">
@@ -43,22 +44,23 @@
                     <div class="text_block">Skilled and experienced coaches.</div>
                 </div>
             </div>
-            <a class="cta" href="">View Teachers</a>
+            <a class="animate__up animate__delay__700 cta cta" href="#teachers">View Teachers</a>
 
         </div>
     </div>
     <div class="hero_block_right">
         <div class="hero_image_wrapper">
-            <img src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6061220c8e556679c912b6cd_Large%20Hero%20Course.png"
+            <img class="animate__left animate__delay__600"
+                src="https://assets.website-files.com/604d8c253d18c714a435bd9c/6061220c8e556679c912b6cd_Large%20Hero%20Course.png"
                 alt="">
         </div>
     </div>
 </section>
 
-<section class="courses">
+<section id="teachers" class="courses">
     <div class="container">
         <div class="content_wrapper">
-            <div class="title_wrapper">
+            <div class="animate__up animate__delay__200 title_wrapper">
                 <div class="header_title_block">
                     <div class="header_accent_wrap">
                         <h3 class="title">
@@ -71,29 +73,21 @@
                         atque ducimus laboriosam saepe rem. At?
                     </p>
                 </div>
-                <a href="" class="cta">Learn More</a>
+                <a href="../about.html" class="cta">Learn More</a>
             </div>
 
-            <div class="background_block_course">
+            <div class="animate__up animate__delay__800 background_block_course">
 
             </div>
-            <div class="list">
+            <div class="animate__up animate__delay__800 list">
                 <ul class="teacher_list">
-                    
+
                 </ul>
             </div>
         </div>
     </div>
 </section>
-<section class="get_started">
-    <div class="title_wrap">
-        <h2>Start Learning from <br />our professionals today!</h2>
-    </div>
-    <form action="">
-        <input type="text" name="" placeholder="Enter your email">
-        <button type="submit">Get Stared Today</button>
-    </form>
-</section>
+
 <footer>
 
 </footer>
@@ -101,8 +95,13 @@
 <body>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="module" src="../data/teachers.js"></script>
 <script type="module" src="../js/teachersAll.js"></script>
 <script async defer src="../js/navbar.js"></script>
-</html>
+<script async defer src="../js/footer.js"></script>
+<script defer src="../js/animations.js"></script>
 
+</html>
