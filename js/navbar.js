@@ -9,7 +9,7 @@ const navbar = (e) => {
     }
 }
 
-let GITHUBPROD = window.location === 'https://alapanbagchi.github.io' ? '/TISOE' : ''
+let GITHUBPROD = window.location.origin === 'https://alapanbagchi.github.io' ? '/TISOE' : ''
 const baseurl = window.location.href.split('/').filter(item => item != '').splice(0, 2).join('//') + GITHUBPROD
 const content = `<ul>
 <li class="logo">
