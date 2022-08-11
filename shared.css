@@ -238,3 +238,10 @@ body {
         margin-left: unset !important;
     }
 }
+
+.footerinfo{
+    color: white;
+    position: relative;
+    bottom: 0;
+    margin-top: 42px;
+}
