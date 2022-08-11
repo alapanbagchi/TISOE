@@ -7,7 +7,9 @@
     font-family: "Eudoxus Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
     color: unset;
