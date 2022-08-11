@@ -1,4 +1,4 @@
-let GIT = '/TISOE'
+let GIT = window.location === 'https://alapanbagchi.github.io' ? '/TISOE' : ''
 const url = window.location.href.split('/').filter(item => item != '').splice(0, 2).join('//') + GIT
 const footercontent = `<section class=" get_started">
 <div class="animate__up title_wrap">
