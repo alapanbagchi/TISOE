@@ -21,7 +21,8 @@
         <div class="animate__up animate__delay__800 header_block"></div>
         <div class="title_wrap">
             <h1 class="animate__up animate__delay__0 title">The mission<br>behind Tisoe.</h1>
-            <p class="animate__up animate__delay__200 paragraph_large">We're on a mission to deliver engaging, curated courses at
+            <p class="animate__up animate__delay__200 paragraph_large">We're on a mission to deliver engaging, curated
+                courses at
                 a reasonable price.</p>
         </div>
         <div class="hero_grid">
@@ -45,7 +46,8 @@
 <div class="content_section">
     <div class="container_extra_small">
         <h4 class="animate__up animate__delay__0 h4_title">🔥 &nbsp;Make It Happen</h4>
-        <p class="animate__up animate__delay__200 paragraph_large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+        <p class="animate__up animate__delay__200 paragraph_large">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Suspendisse varius enim in
             eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
             libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
             tristique posuere.</p>
@@ -70,7 +72,8 @@
         </div>
         <div class="title_wrap_centre">
             <h4 class="animate__up animate__delay__0 h4_title">Our Story</h4>
-            <p class="animate__up animate__delay__200 paragraph_large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+            <p class="animate__up animate__delay__200 paragraph_large">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Suspendisse varius enim
                 in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
                 diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem
                 vitae risus tristique posuere.</p>
@@ -80,12 +83,39 @@
 <footer class="animate__up"></footer>
 <footer>
 </footer>
+
+<script defer>
+
+    function onloadCallback() {
+        widget1 = grecaptcha.render(document.getElementById('recaptchanav'), {
+            'sitekey': '6LdJS2ohAAAAACu9dWJkwSMDouHIFVUGYVp4E79r',
+            callback: function (res) {
+                window.open(
+                    'mailto:tisoe@protonmail.com?subject=I am interested in TISOE&body=Hi,%0D%0AI%20have%20a%20few%20questions%20about TISOE.%0D%0A%0D%0AAdditional%20Comments: %0D%0AThanks%20for%20choosing%20 TISOE!%20We%20will%20contact%20you%20as%20soon%20as%20possible'
+                )
+                grecaptcha.reset(widget1)
+            }
+        })
+
+        widget2 = grecaptcha.render(document.getElementById('recaptchafooter'), {
+            'sitekey': '6LdJS2ohAAAAACu9dWJkwSMDouHIFVUGYVp4E79r',
+            callback: function (res) {
+                window.open(
+                    'mailto:tisoe@protonmail.com?subject=I am interested in TISOE&body=Hi,%0D%0AI%20have%20a%20few%20questions%20about TISOE.%0D%0A%0D%0AAdditional%20Comments: %0D%0AThanks%20for%20choosing%20 TISOE!%20We%20will%20contact%20you%20as%20soon%20as%20possible'
+                )
+                grecaptcha.reset(widget2)
+            }
+        })
+
+    }
+</script>
+<script defer src="./js/navbar.js"></script>
+<script defer src="./js/footer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
     integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./js/animations.js"></script>
-<script async defer src="./js/navbar.js"></script>
-<script async defer src="./js/footer.js"></script>
 
+<script async defer src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"> </script>
 
 </html>

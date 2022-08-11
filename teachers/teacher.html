@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,15 +31,7 @@
             </ul>
         </div>
 </section>
-<section class="get_started">
-    <div class="title_wrap">
-        <h2>Start Learning from <br />our professionals today!</h2>
-    </div>
-    <form action="">
-        <input type="text" name="" placeholder="Enter your email">
-        <button type="submit">Get Stared Today</button>
-    </form>
-</section>
+
 <footer>
 
 </footer>
@@ -46,8 +39,38 @@
 <body>
 
 </body>
+<script defer>
+
+    function onloadCallback() {
+        widget1 = grecaptcha.render(document.getElementById('recaptchanav'), {
+            'sitekey': '6LdJS2ohAAAAACu9dWJkwSMDouHIFVUGYVp4E79r',
+            callback: function (res) {
+                window.open(
+                    'mailto:tisoe@protonmail.com?subject=I am interested in TISOE&body=Hi,%0D%0AI%20have%20a%20few%20questions%20about TISOE.%0D%0A%0D%0AAdditional%20Comments: %0D%0AThanks%20for%20choosing%20 TISOE!%20We%20will%20contact%20you%20as%20soon%20as%20possible'
+                )
+                grecaptcha.reset(widget1)
+            }
+        })
+
+        widget2 = grecaptcha.render(document.getElementById('recaptchafooter'), {
+            'sitekey': '6LdJS2ohAAAAACu9dWJkwSMDouHIFVUGYVp4E79r',
+            callback: function (res) {
+                window.open(
+                    'mailto:tisoe@protonmail.com?subject=I am interested in TISOE&body=Hi,%0D%0AI%20have%20a%20few%20questions%20about TISOE.%0D%0A%0D%0AAdditional%20Comments: %0D%0AThanks%20for%20choosing%20 TISOE!%20We%20will%20contact%20you%20as%20soon%20as%20possible'
+                )
+                grecaptcha.reset(widget2)
+            }
+        })
+
+    }
+</script>
+
+
 <script type="module" src="../data/courses.js"></script>
 <script type="module" src="../data/teachers.js"></script>
 <script type="module" src="../js/teacherSingle.js"></script>
 <script async defer src="../js/navbar.js"></script>
+<script async defer src="../js/footer.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"> </script>
+
 </html>

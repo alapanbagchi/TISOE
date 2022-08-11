@@ -8,8 +8,10 @@ const navbar = (e) => {
         document.getElementById('links').classList.add('active')
     }
 }
+
+
 let GITHUBPROD = '/TISOE'
-const baseurl = window.location.href.split('/').filter(item=>item!='').splice(0, 2).join('//')+GITHUBPROD  
+const baseurl = window.location.href.split('/').filter(item => item != '').splice(0, 2).join('//') + GITHUBPROD
 const content = `<ul>
 <li class="logo">
     <a href="${baseurl}/index.html">
@@ -29,9 +31,14 @@ const content = `<ul>
     <li class="link"><a href="${baseurl}/about.html">About Us</a></li>
     <li class="link"><a href="${baseurl}/courses">Courses</a></li>
     <li class="link"><a href="${baseurl}/teachers">Teachers</a></li>
-    <button><a href="${baseurl}/contactus.html">Contact Us</a></button>
+        <button class="g-recaptcha" id="recaptchanav">Contact Us
+        </button>
 </div>
-</ul>`
+</ul>
+
+`
 
 
 document.querySelector('nav').innerHTML = content
+
+

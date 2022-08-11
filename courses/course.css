@@ -288,6 +288,7 @@
 
 .cta {
     position: relative;
+    cursor: pointer;
     display: flex;
     width: auto;
     padding: 16px 32px;

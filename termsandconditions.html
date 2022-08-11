@@ -155,8 +155,46 @@
 
 </body>
 
+<script defer>
 
+    function onloadCallback() {
+        [].forEach.call(document.querySelectorAll('.g-recaptcha'), function (el) {
+            let renderCaptcha = grecaptcha.render(el, {
+                sitekey: '6Lcm-mkhAAAAAOkSNLKo23owPvEi0oI2pZyjNNYh',
+                callback: function (token) {
+                    grecaptcha.execute();
+                    console.log(token)
+                    grecaptcha.reset()
 
+                }
+            });
+        });
+    };
+</script>
+<script defer>
+
+    function onloadCallback() {
+        widget1 = grecaptcha.render(document.getElementById('recaptchanav'), {
+            'sitekey': '6LdJS2ohAAAAACu9dWJkwSMDouHIFVUGYVp4E79r',
+            callback: function (res) {
+                window.open(
+                    'mailto:tisoe@protonmail.com?subject=I am interested in TISOE&body=Hi,%0D%0AI%20have%20a%20few%20questions%20about TISOE.%0D%0A%0D%0AAdditional%20Comments: %0D%0AThanks%20for%20choosing%20 TISOE!%20We%20will%20contact%20you%20as%20soon%20as%20possible'
+                )
+                grecaptcha.reset(widget1)
+            }
+        })
+        widget3 = grecaptcha.render(document.getElementById('recaptchafooter'), {
+            'sitekey': '6LdJS2ohAAAAACu9dWJkwSMDouHIFVUGYVp4E79r',
+            callback: function (res) {
+                window.open(
+                    'mailto:tisoe@protonmail.com?subject=I am interested in TISOE&body=Hi,%0D%0AI%20have%20a%20few%20questions%20about TISOE.%0D%0A%0D%0AAdditional%20Comments: %0D%0AThanks%20for%20choosing%20 TISOE!%20We%20will%20contact%20you%20as%20soon%20as%20possible'
+                )
+                grecaptcha.reset(widget3)
+            }
+        })
+
+    }
+</script>
 <script defer src="./js/navbar.js"></script>
 <script defer src="./js/footer.js"></script>
 
@@ -164,5 +202,5 @@
     integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script defer src="./js/animations.js"></script>
-
+<script async defer src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"> </script>
 </html>

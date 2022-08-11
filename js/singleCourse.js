@@ -74,7 +74,7 @@ const courseTemplate = `<div class="wrapper">
             <div class="course_price_info">
                 <h5>${course.price}.00/hr</h5>
             </div>
-            <a href="" class="cta">Buy Course Now</a>
+            <button id="courserecaptcha" class="cta g-recaptcha">Buy Course Now</button>
             <div class="course_feature_wrap">
                 <div class="heading_large">This course includes:</div>
                 <div class="course_feature_list">
