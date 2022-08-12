@@ -8,7 +8,7 @@ teachers.forEach(teacher => {
     <div style="margin-right:32px" class="teacher_slides slides">
     <a  href="teachers/teacher.html?id=${teacher.name.toLowerCase().replace(' ','_')}">
     <div class="teacher_slide_image">
-        <img src="${teacher.avatar}"
+        <img src="${teacher.avatar.split('/upload')[0] + '/upload/c_scale,w_400,h_550' + teacher.avatar.split('/upload')[1]}"
             alt="">
     </div>
 
@@ -18,7 +18,7 @@ teachers.forEach(teacher => {
             <p class="teacher_designation">${teacher.designation}</p>
             
         </div>
-        <div class="blur"></div>
+        <div style="background-image:url('${teacher.avatar}')" class="blur"></div>
     </div>
     </a>
 </div>`

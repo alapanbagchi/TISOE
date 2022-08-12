@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #D0ECF5;
-    background-image: url('https://assets.website-files.com/604d8c253d18c714a435bd9c/604d8c253d18c756da35bdf0_Header%20Course%20Update.png');
+    background-image: url('https://res.cloudinary.com/alapanbagchi/image/upload/v1660294748/Tisoe/assets/604d8c253d18c756da35bdf0_Header_Course_Update_fl39bv.webp');
     background-position: 0% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -374,7 +374,7 @@ iframe{
     margin-right: auto;
     margin-left: auto;
     background-color: #d0ecf5;
-    background-image: url("https://assets.website-files.com/604d8c253d18c714a435bd9c/604d8c253d18c7771035bdf1_Feature%20Background%20Card.png");
+    background-image: url("https://res.cloudinary.com/alapanbagchi/image/upload/v1660294874/Tisoe/assets/Featue_Background.webp");
     background-position: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -481,7 +481,7 @@ iframe{
 
 .courses .slider_wrapper,
 .teachers .slider_wrapper {
-    background-image: url("https://assets.website-files.com/604d8c253d18c714a435bd9c/604d8c253d18c7fbaf35bdf8_Resource%20Background%20Shapes.png");
+    background-image: url("https://res.cloudinary.com/alapanbagchi/image/upload/v1660295486/Tisoe/assets/Slider.webp");
 }
 
 .teachers .slider_wrapper {
@@ -750,7 +750,6 @@ iframe{
     right: 0%;
     bottom: 0%;
     background-color: rgba(243, 246, 251, 0.69);
-    background-image: url("https://assets.website-files.com/604d8c253d18c7439235bdbb/604d8c253d18c79ba335be60_Author%20Oguz.png");
     background-position: 50% 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -965,7 +964,7 @@ iframe{
     background-position: 50% 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("https://assets.website-files.com/604d8c253d18c714a435bd9c/604ec7f0c4d62295400ddd41_Content%20Shapes%2001.png");
+    background-image: url("https://res.cloudinary.com/alapanbagchi/image/upload/v1660295579/Tisoe/assets/Card_1.webp");
 }
 
 .additional_features .container .block.card2 .images {
@@ -976,7 +975,7 @@ iframe{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("https://assets.website-files.com/604d8c253d18c714a435bd9c/604ec7ed94532b115eaed70a_Shapes%20Content%2002.png");
+    background-image: url("https://res.cloudinary.com/alapanbagchi/image/upload/v1660295740/Tisoe/assets/Card_2.webp");
     background-position: 50% 100%;
     background-size: auto 95%;
     background-repeat: no-repeat;
@@ -1345,7 +1344,7 @@ h5 {
     margin-right: auto;
     margin-left: auto;
     background-color: #f3f6fb;
-    background-image: url('https://assets.website-files.com/604d8c253d18c714a435bd9c/604d8c253d18c7506935bdf4_Course%20Feature%20Background.png');
+    background-image: url('https://res.cloudinary.com/alapanbagchi/image/upload/v1660295781/Tisoe/assets/Course_Feature_Background.webp');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
