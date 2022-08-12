@@ -308,6 +308,8 @@ iframe{
     width: 250px !important;
     right: 0% !important;
     top: 72% !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
     height: fit-content !important;
     z-index: 6;
 }
@@ -358,7 +360,6 @@ iframe{
     display: flex;
     padding-top: 96px;
     padding-bottom: 96px;
-    -ms-flex-direction: column;
     flex-direction: column;
     justify-content: center;
 }
@@ -493,6 +494,8 @@ iframe{
     padding: 40px;
     max-height: 550px;
     background-color: #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     max-width: 510px;
     min-width: 510px;
@@ -567,7 +570,11 @@ iframe{
 
 .content .author .avatar {
     position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin-right: 20px;
     border-radius: 100%;
@@ -624,6 +631,8 @@ iframe{
     position: absolute !important;
     width: 250px !important;
     bottom: -60px;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
     height: fit-content !important;
     display: flex;
     gap: 2rem;
@@ -677,7 +686,8 @@ iframe{
 
 .teacher_image img {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .teacher_slides {
@@ -697,7 +707,8 @@ iframe{
 .teacher_slide_image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     transform: scale(1);
     transition: all 4s ease-in-out;
 }
